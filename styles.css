@@ -1,0 +1,56 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family sans-serif;
+}
+
+body,h1,h2,h3,h4,p,figure,blockquote,dl,dd 
+{
+    margin: 0;
+}
+
+
+ul[role="list"],
+ol[role="list"]{
+    list-style: none;
+    padding:0;
+
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering optimizeSpeed;
+    letter-spacing: -0.01em;
+}
+
+a:not([class]){
+    text-decoration-skip-ink: auto;
+}
+
+img,picture {
+    max-width: 100%;
+    display: block;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
+:focus {
+    outline: 2px dashed #00ff19;
+    outline-offset: 0.25rem;
+}
+
+main:focus {
+    outline: none
+}
