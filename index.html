@@ -1,56 +1,254 @@
-<!doctype html5>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device.width, initial=scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Portfiolio Lars</title>
-  </head>
-  <body>
-    <header class="site_header">
-      <div class="wrapper_inner">
-        <nav class="site_header_nav">
-          <ul role="list" class="flex flex_center">
-            <li><a href="#0">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Cybersecurity Student</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="#hero">YourName<span style="color:var(--accent)">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-badge">Available for internships · Amsterdam</div>
+    <h1>Cybersecurity<br/>student &amp; thinker.</h1>
+    <p class="hero-sub">
+      Second-year student at the Amsterdam University of Applied Sciences,
+      focused on network security, ethical hacking, and building a safer digital world.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View my projects</a>
+      <a href="#contact" class="btn btn-outline">Get in touch</a>
+    </div>
+  </section>
+ 
+  <hr class="divider"/>
+ 
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section-label reveal">About me</p>
+    <h2 class="reveal">Hi, I'm <span style="color:var(--accent)">Lars Stalenhoef</span>.</h2>
+    <div class="about-grid">
+      <div class="about-photo reveal">🧑‍💻</div>
+      <div class="about-text reveal">
+        <p>
+          I'm a second-year Cybersecurity student at the Amsterdam University of Applied Sciences (HvA),
+          passionate about understanding how systems can be broken — and how to defend them better.
+        </p>
+        <p>
+          My interests span network security, penetration testing, cryptography, and security engineering.
+          I enjoy hands-on CTF challenges and constantly push myself to understand the full attack surface.
+        </p>
+        <p>
+          Outside of tech I enjoy going to the Gym, spending time with friends and tinkering with home lab setups.
+        </p>
       </div>
-    </header>
-    <main>
-      <section id="hero">
-        <div class="wrapper">
-          <div class="wrapper_inner">
-            <div class="text_center hero_content">
-              <h1 class="h2">Lars</h1>
-              <p class="h5">CyberSecurity Student</p>
-            </div>
-          </div>
-          <ul role="list" class="flex flex_between hero_social">
-            <address>Utrecht, The Netherlands</address>
-            <ul role="list" class="flex">
-              <li>Stalk mij</li>
-              <li>
-                <a href="https://github.com/larssie321" target="_blank">
-                  <img
-                    src="/assets/github.svg"
-                    alt="GitHub"
-                    width="24"
-                    height="24"
-                  />
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/lars4291" target="_blank">
-                  <img src="/assets/x.svg" alt="X" width="24" height="24" />
-                </a>
-              </li>
-            </ul>
-          </ul>
+    </div>
+  </section>
+ 
+  <hr class="divider"/>
+ 
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label reveal">What I work with</p>
+    <h2 class="reveal">Skills &amp; tools</h2>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔍</div>
+        <div class="skill-name">Penetration Testing</div>
+        <div class="skill-desc">Kali Linux, Burp Suite</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">Network Security</div>
+        <div class="skill-desc">Wireshark, Nmap, TCP/IP, firewalls</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python</div>
+        <div class="skill-desc">Scripting, automation</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🐧</div>
+        <div class="skill-name">Linux</div>
+        <div class="skill-desc">Bash scripting, system hardening</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">☁️</div>
+        <div class="skill-name">Cloud Security</div>
+        <div class="skill-desc">Azure basics, IAM</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">📋</div>
+        <div class="skill-name">OWASP Top 10</div>
+        <div class="skill-desc">Web app vulnerabilities & mitigation</div>
+      </div>
+    </div>
+  </section>
+ 
+  <hr class="divider"/>
+ 
+  <!-- EDUCATION TIMELINE -->
+  <section id="education">
+    <p class="section-label reveal">My journey</p>
+    <h2 class="reveal">Education &amp; milestones</h2>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2026</div>
+        <div class="timeline-title">AZ-900</div>
+        <div class="timeline-place">Self-study</div>
+        <div class="timeline-desc">
+          Getting to know the Microsoft Azure systems
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2026</div>
+        <div class="timeline-title">Intern</div>
+        <div class="timeline-place">Cobase Amsterdam</div>
+        <div class="timeline-desc">
+          Creating an Intranet Portal for internal use, with RBAC.
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024 — Present</div>
+        <div class="timeline-title">Bachelor of Applied Science — Cybersecurity</div>
+        <div class="timeline-place">Amsterdam University of Applied Sciences (HvA), Amsterdam</div>
+        <div class="timeline-desc">
+          Studying network security, risk management, and secure software development.
+          Currently in year 2 working at an internship
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2024</div>
+        <div class="timeline-title">Intern</div>
+        <div class="timeline-place">Prinses Maxima Centrum - Utrecht</div>
+        <div class="timeline-desc">
+          Helping the IT Department.
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022 - Present</div>
+        <div class="timeline-title">Studentaanhuis</div>
+        <div class="timeline-place">Utrecht - Remote</div>
+        <div class="timeline-desc">
+          Solving computer problem for people with no IT knowledge.
+        </div>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021-2024</div>
+        <div class="timeline-title">MBO — ICT</div>
+        <div class="timeline-place">ROC Midden Nederland, Amersfoort</div>
+        <div class="timeline-desc">
+          Graduated with a focus on IT infrastructure and networking fundamentals.
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <hr class="divider"/>
+ 
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label reveal">What I've built</p>
+    <h2 class="reveal">Projects</h2>
+    <div class="projects-grid">
+      <a href="#" class="project-card reveal">
+        <span class="project-tag">Network Security</span>
+        <div class="project-title">Home Lab SIEM Setup</div>
+        <div class="project-desc">
+          Built a local security monitoring lab using Splunk to collect and analyse
+          logs from various VMs, simulating real-world SOC workflows.
+        </div>
+        <span class="project-link">View project →</span>
+      </a>
+      <a href="#" class="project-card reveal">
+        <span class="project-tag">Penetration Testing</span>
+        <div class="project-title">Vulnerable VM Writeups</div>
+        <div class="project-desc">
+          Documented step-by-step walkthroughs of HackTheBox and TryHackMe machines,
+          covering enumeration, exploitation, and privilege escalation.
+        </div>
+        <span class="project-link">View project →</span>
+      </a>
+      <a href="#" class="project-card reveal">
+        <span class="project-tag">Python</span>
+        <div class="project-title">Port Scanner Tool</div>
+        <div class="project-desc">
+          A lightweight Python tool for scanning open ports and identifying services,
+          built from scratch as a learning exercise in network programming.
+        </div>
+        <span class="project-link">View on GitHub →</span>
+      </a>
+      <a href="#" class="project-card reveal">
+        <span class="project-tag">Web Security</span>
+        <div class="project-title">OWASP Research Report</div>
+        <div class="project-desc">
+          School project analysing the OWASP Top 10 vulnerabilities with real-world
+          case studies and mitigation strategies for each category.
+        </div>
+        <span class="project-link">Read report →</span>
+      </a>
+    </div>
+  </section>
+ 
+  <hr class="divider"/>
+ 
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-box reveal">
+      <div>
+        <h2>Let's connect.</h2>
+        <p>Open to internships, collaborations, and coffee chats.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:lars_2003@outlook.com" class="contact-link">✉️ Email</a>
+        <a href="https://www.linkedin.com/in/lars-stalenhoef-25a28a251" class="contact-link" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/larssie321" class="contact-link" target="_blank">🐙 GitHub</a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Your Name · Built with HTML &amp; CSS · Amsterdam 🇳🇱</p>
+  </footer>
+ 
+  <script>
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          // stagger siblings in same parent
+          const siblings = [...e.target.parentElement.querySelectorAll('.reveal:not(.visible)')];
+          const idx = siblings.indexOf(e.target);
+          setTimeout(() => {
+            e.target.classList.add('visible');
+          }, idx * 60);
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
 </html>
